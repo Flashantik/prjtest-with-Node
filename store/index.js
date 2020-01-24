@@ -1,17 +1,17 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-Vue.use(Vuex)
-
 import user from './modules/user'
 import profile from './modules/profile'
+
+Vue.use(Vuex)
 
 const store = () => new Vuex.Store({
   namespaced: true,
   modules: {
     user,
     profile
-  },
+  }
 }
 )
 

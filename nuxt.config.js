@@ -1,5 +1,4 @@
-
-export default {
+module.exports = {
   mode: 'universal',
   /*
   ** Headers of the page
@@ -16,7 +15,7 @@ export default {
     ]
   },
   router: {
-    linkActiveClass: 'active',
+    linkActiveClass: 'active'
   },
   /*
   ** Customize the progress-bar color
@@ -36,13 +35,16 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    // Doc: https://github.com/nuxt-community/eslint-module
+    '@nuxtjs/eslint-module'
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios', // adding axios nuxt module
     // Doc: https://bootstrap-vue.js.org
-    'bootstrap-vue/nuxt',
+    'bootstrap-vue/nuxt'
   ],
   /*
   ** Build configuration
